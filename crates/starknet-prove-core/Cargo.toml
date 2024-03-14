@@ -1,0 +1,16 @@
+[package]
+name = "starknet-prove-core"
+version = "0.1.0"
+edition = "2021"
+
+authors.workspace = true
+readme.workspace = true
+license.workspace = true
+
+[features]
+default = ["std"]
+
+std = ["starknet-types-core/std"]
+
+[dependencies]
+starknet-types-core = { version = "0.0.9", default-features = false }
